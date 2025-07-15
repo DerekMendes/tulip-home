@@ -60,12 +60,13 @@ section#formulario {
 
     width: 400px;
     height: 150px;
-    top: 40vh;
+    top: 25vh;
     left: 50%;
 
     
     background-color: rgb(20, 20, 20);
     color: white;
+    border-radius: 3px;
 
     transform: translate(-50%, 0);
 }
