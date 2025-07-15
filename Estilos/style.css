@@ -18,13 +18,14 @@ header {
 header h1 {
     margin: 5px;
     color: #593D2D;
+    display: inline-block;
 }
 
 nav ul {
     position: relative;
     left: 90px;
     margin: 20px;
-    display: flex;
+    display: none;
     gap: 10px;
     list-style: none;
 }
@@ -59,7 +60,7 @@ section#formulario {
 
     width: 400px;
     height: 150px;
-    top: 200px;
+    top: 40vh;
     left: 50%;
 
     
