@@ -55,7 +55,48 @@ header a {
 }
 
 section#formulario {
-    width: 100vw;
-    height: 200px;
-    background-color: grey;
+    position: absolute;
+
+    width: 400px;
+    height: 150px;
+    top: 200px;
+    left: 50%;
+
+    
+    background-color: rgb(20, 20, 20);
+    color: white;
+
+    transform: translate(-50%, 0);
+}
+
+section#formulario label {
+    
+    margin: 60px;
+    margin-bottom: 15px;
+
+}
+
+
+section#formulario input {
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    width: 130px;
+    
+}
+
+
+
+section#formulario #buttom-orcamento {
+    display: flex;
+    margin: auto;
+    margin-top: -5px;
+    width: 120px;
+    padding: 10px 0;
+    
+    border-style: none;
+    text-align: center;
+    background-color: rgb(201, 118, 10);
+    color: white;
+    border-radius: 3px;
 }
