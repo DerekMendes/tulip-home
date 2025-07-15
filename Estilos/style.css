@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+
+header h1 {
+    margin: 5px;
+    color: #593D2D;
+}
+
+nav ul {
+    position: relative;
+    left: 90px;
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+#banner {
+    position: relative;
+    top: 0;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0 0 5px 5px;
+}
+
+#logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section#formulario {
+    width: 100vw;
+    height: 200px;
+    background-color: grey;
+}
