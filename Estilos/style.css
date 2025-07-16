@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,33 +9,44 @@
 
 }
 
-header {
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    
+body {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #D9D4CC;
 }
 
+header {
+    background-color: rgb(201, 118, 10);
+    display: flex;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 35px;
+}
 
 header h1 {
-    margin: 5px;
-    color: #593D2D;
-    display: inline-block;
+    padding-left: 10px;
+    font-size: 1.8em;
+
+    position: relative;
+    top: -10px;
 }
 
-nav ul {
-    position: relative;
-    left: 90px;
-    margin: 20px;
+header ul {
+    list-style: none;
     display: none;
     gap: 10px;
-    list-style: none;
+    
 }
 
 header a {
     text-decoration: none;
-    color: black;
+    color: white;
+    
 }
+
 
 #banner {
     position: relative;
@@ -44,7 +57,7 @@ header a {
 
 #banner img {
     width: 100%;
-    height: auto;
+    height: 350px;
     display: block;
     border-radius: 0 0 5px 5px;
 }
@@ -59,8 +72,8 @@ section#formulario {
     position: absolute;
 
     width: 400px;
-    height: 150px;
-    top: 25vh;
+    height: 160px;
+    top: 300px;
     left: 50%;
 
     
@@ -82,7 +95,7 @@ section#formulario label {
 section#formulario input {
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     width: 130px;
     
 }
@@ -95,7 +108,7 @@ section#formulario input#iemail {
 section#formulario #buttom-orcamento {
     display: flex;
     margin: auto;
-    margin-top: -5px;
+    margin-top: -2px;
     width: 120px;
     padding: 10px 0;
     
@@ -104,4 +117,10 @@ section#formulario #buttom-orcamento {
     background-color: rgb(201, 118, 10);
     color: white;
     border-radius: 3px;
+}
+
+#estilos-projeto {
+    margin-top: 0;
+    margin-left: 20px;
+    width: 180px;
 }
