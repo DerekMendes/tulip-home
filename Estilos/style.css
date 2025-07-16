@@ -13,7 +13,7 @@ body {
     font-family: "Sriracha", cursive;
     font-weight: 400;
     font-style: normal;
-    background-color: #D9D4CC;
+    background-color: #593D2D;
 }
 
 header {
@@ -108,7 +108,7 @@ section#formulario input#iemail {
 section#formulario #buttom-orcamento {
     display: flex;
     margin: auto;
-    margin-top: -2px;
+    margin-top: 3px;
     width: 120px;
     padding: 10px 0;
     
@@ -117,10 +117,33 @@ section#formulario #buttom-orcamento {
     background-color: rgb(201, 118, 10);
     color: white;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 #estilos-projeto {
     margin-top: 0;
     margin-left: 20px;
     width: 180px;
+}
+
+#grid1 img {
+    position: relative;
+    left: 15%;
+    top: 300px;
+    width: 190px;
+    height: 400px;
+
+    transform: translate(-25%, 0);
+
+}
+
+#grid2 img {
+    position: relative;
+    left: 65%;
+    top: -110px;
+    width: 190px;
+    height: 400px;
+
+    transform: translate(-25%, 0);
+
 }
