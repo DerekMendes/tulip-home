@@ -81,12 +81,15 @@ section#formulario label {
 
 section#formulario input {
     margin-left: 20px;
-    margin-right: 30px;
+    margin-right: 20px;
     margin-bottom: 20px;
     width: 130px;
     
 }
 
+section#formulario input#iemail {
+    width: 180px;
+}
 
 
 section#formulario #buttom-orcamento {
