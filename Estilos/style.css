@@ -14,6 +14,7 @@ body {
     font-weight: 400;
     font-style: normal;
     background-color: #593D2D;
+    max-width: 100vw;
 }
 
 header {
@@ -53,6 +54,7 @@ header a {
     top: 0;
     width: 100vw;
     overflow: hidden;
+    
 }
 
 #banner img {
@@ -60,12 +62,7 @@ header a {
     height: 350px;
     display: block;
     border-radius: 0 0 5px 5px;
-}
-
-#logo img {
-    width: 100%;
-    height: auto;
-    display: block;
+    max-width: 100vw;
 }
 
 section#formulario {
@@ -75,6 +72,7 @@ section#formulario {
     height: 160px;
     top: 300px;
     left: 50%;
+    max-width: 100vw;
 
     
     background-color: rgb(20, 20, 20);
@@ -126,24 +124,33 @@ section#formulario #buttom-orcamento {
     width: 180px;
 }
 
-#grid1 img {
-    position: relative;
-    left: 15%;
-    top: 300px;
-    width: 170px;
-    height: 400px;
+.carrosel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 16px;
+    scroll-behavior: smooth;
+    margin-top: 200px;
+}
 
-    transform: translate(-25%, 0);
+.item {
+    flex: none;
+    width: 75vw;
+    scroll-snap-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#carossel::-webkit-scrollbar {
+    display: none;
 
 }
 
-#grid2 img {
-    position: relative;
-    left: 65%;
-    top: -110px;
-    width: 170px;
-    height: 400px;
-
-    transform: translate(-25%, 0);
-
-}
