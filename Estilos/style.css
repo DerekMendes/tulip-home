@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +58,7 @@ header a {
 #banner {
     position: relative;
     top: 0;
-    width: 100vw;
+    width: 97vw;
     overflow: hidden;
     
 }
@@ -68,6 +72,7 @@ header a {
 }
 
 section#formulario {
+    display: none;
     position: absolute;
 
     width: 400px;
@@ -126,6 +131,12 @@ section#formulario #buttom-orcamento {
     width: 160px;
 }
 
+#grid > h1 {
+    margin-top:80px;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: "Funnel Display", sans-serif;
+}
 .carrosel {
     display: flex;
     overflow-x: auto;
@@ -133,7 +144,7 @@ section#formulario #buttom-orcamento {
     gap: 16px;
     padding: 16px;
     scroll-behavior: smooth;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 .item {
@@ -154,5 +165,26 @@ section#formulario #buttom-orcamento {
 #carossel::-webkit-scrollbar {
     display: none;
 
+}
+
+div#sobre {
+    top: 100px;
+    padding: 25px;
+    position: relative;
+    background-image: linear-gradient(to top, #A6978A 200px, #d4cac1);
+    width: 97vw;
+    margin: auto;
+}
+
+#sobre h1 {
+    font-family: "Funnel Display", sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#sobre p {
+    text-indent: 2em;
+    font-family: "Funnel Display", sans-serif;
+    text-align: justify;
 }
 
