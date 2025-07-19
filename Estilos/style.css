@@ -1,190 +1,147 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     font-family: "Poiret One", sans-serif;
 
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    background-color: white;
-    max-width: 100vw;
-}
-
-header {
-    background-color: #41230D;
-    display: flex;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
     width: 100vw;
-    height: 35px;
+}
+header {
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+
+    background-color: rgba(0, 0, 0, 0.219);
 }
 
 header h1 {
-    padding-left: 10px;
-    font-size: 1.8em;
-
-    position: relative;
-    top: -2px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.4em;
+    color: white;
 }
 
-header ul {
+header nav ul {
     list-style: none;
     display: none;
-    gap: 10px;
-    
+
 }
 
-header a {
+header nav a {
     text-decoration: none;
-    color: white;
-    
+    color: black;
 }
 
 
 #banner {
-    position: relative;
     top: 0;
-    width: 97vw;
-    overflow: hidden;
-    
+    position: absolute;
+    width: 100vw;
+    height: 200px;
+    z-index: 0;
+
 }
 
 #banner img {
     width: 100%;
-    height: 350px;
-    display: block;
-    border-radius: 0 0 5px 5px;
-    max-width: 100vw;
 }
 
-section#formulario {
-    display: none;
-    position: absolute;
-
-    width: 400px;
-    height: 160px;
-    top: 300px;
-    left: 50%;
-    max-width: 100vw;
-
-    
-    background-color: rgb(20, 20, 20);
+#banner p {
     color: white;
-    border-radius: 3px;
+    font-size: 1em;
+    text-shadow: 2px 2px 3px black;
 
-    transform: translate(-50%, 0);
-}
-
-section#formulario label {
-    
-    margin: 60px;
-    margin-bottom: 15px;
-
-}
-
-
-section#formulario input {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 0px;
-    width: 130px;
-    
-}
-
-section#formulario input#iemail {
-    width: 160px;
-}
-
-
-section#formulario #buttom-orcamento {
-    display: flex;
-    margin: auto;
-    margin-top: 25px;
-    width: 120px;
-    padding: 10px 0;
-    
-    border-style: none;
+    position: relative;
+    z-index: 2;
+    top: -120px;
     text-align: center;
-    background-color: rgb(201, 118, 10);
-    color: white;
-    border-radius: 3px;
-    cursor: pointer;
 }
 
-#estilos-projeto {
-    margin-top: 0;
-    margin-left: 20px;
-    width: 160px;
+section#carrosel h1 {
+    position: relative;
+    margin-top: 220px;
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 2em;
 }
 
-#grid > h1 {
-    margin-top:80px;
-    text-align: center;
-    font-size: 1.8em;
-    font-family: "Funnel Display", sans-serif;
-}
-.carrosel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 16px;
-    padding: 16px;
-    scroll-behavior: smooth;
-    margin-top: 50px;
-}
+#grid {
+
+      display: flex;
+      overflow-x: auto;
+      margin-top: 10px;
+      scroll-snap-type: x mandatory;
+      gap: 16px;
+      padding: 16px;
+      scroll-behavior: smooth;
+    }
 
 .item {
-    flex: none;
-    width: 75vw;
-    scroll-snap-align: center;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+      flex: none;
+      width: 75vw; /* padrão: celular */
+      scroll-snap-align: center;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
 .item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-#carossel::-webkit-scrollbar {
-    display: none;
+.container::-webkit-scrollbar {
+      display: none;
+    }
 
-}
-
-div#sobre {
-    top: 100px;
-    padding: 25px;
-    position: relative;
-    background-image: linear-gradient(to top, #A6978A 200px, #d4cac1);
-    width: 97vw;
-    margin: auto;
-}
-
-#sobre h1 {
-    font-family: "Funnel Display", sans-serif;
-    text-align: center;
+#sobre {
+    background-color: #E9E6DD;
     padding: 20px;
+    width: 100vw;
+}
+
+#sobre img {
+    position: relative;
+    left: 35vw;
+    width: 25%;
+}
+
+#sobre h2 {
+    text-align: center;
+    
 }
 
 #sobre p {
-    text-indent: 2em;
-    font-family: "Funnel Display", sans-serif;
     text-align: justify;
 }
 
+#planos {
+    margin-top: 50px;
+    background-color: #CFC9BB;
+    color: white;
+}
+
+#planos ul {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    padding: 20px;
+}
+
+#planos a {
+    color: white;
+    text-decoration: none;
+}
+
+#planos a:hover {
+    color: #817e75;
+    text-decoration: underline;
+}
