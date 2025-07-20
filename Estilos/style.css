@@ -370,6 +370,7 @@ input[type=submit] {
     position: relative;
     width: 16vw;
     z-index: 10;
+    height: 70px;
 }
 
 footer {
@@ -417,6 +418,15 @@ footer h4 {
     padding: 25px;
     color: white;
     font-size: 1.5em;
+}
+
+#icon {
+    vertical-align: middle;
+    
+}
+
+footer #number {
+    margin-left: 30px;
 }
 
 footer p#email {

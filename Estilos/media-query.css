@@ -1,1 +1,50 @@
 @charset "UTF-8";
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+    
+    #banner {
+        height: 400px;
+
+    }
+
+    #banner p {
+        top: -190px;
+    }
+
+    section#carrosel h1 {
+        margin-top: 430px;
+    }
+
+    #planos ul{
+        gap: 80px;
+    }
+
+    .texto-plano {
+        font-size: 0.9em;
+    }
+
+    #plano-simples img {
+        height: 300px;
+    }
+
+    #plano-plus .texto-plano {
+        font-size: 0.9em;
+    }
+
+    #plano-plus img {
+       height: 350px;
+    }
+
+    #plano-comercial img {
+        height: 350px;
+    }
+
+    #tulipa img {
+        margin: 0 -8px ;
+    }
+
+    footer #imagens img {
+        width: 23%;
+        height: 160px;
+    }
+}
