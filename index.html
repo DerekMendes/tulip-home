@@ -6,6 +6,8 @@
     <title>Tulip Home</title>
     <link rel="stylesheet" href="Estilos/style.css">
     <link rel="stylesheet" href="Estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    
 </head>
 <body>
         <header>
@@ -15,7 +17,7 @@
                     <li><a href="Home">Home</a></li>
                     <li><a href="Sobre">Sobre</a></li>
                     <li><a href="Planos">Meus planos</a></li>
-                    <li><a href="Portfolio">Portfólio</a></li>
+                    <!-- <li><a href="Portfolio">Portfólio</a></li>  VER DEPOIS-->
                     <li><a href="Contato">Contato</a></li>
                 </ul>
             </nav>
@@ -57,11 +59,12 @@
                     </ul>
                 </menu>
             </section>
-
             <section id="plano-simples">
                     <div class="conteudo">
                         <div id="imagem1"><img src="imagens/salao-de-festa/salao-de-festa.png" alt="salao-de-festa"></div>
-                        <div id="texto-plano"><p>Neste pacote, oferecemos um serviço  para transformar seu espaço de acordo com seus gostos e ideias. O processo começa com um planejamento detalhado do ambiente, levando em consideração todos os seus desejos.</p>
+                        <div class="texto-plano">
+                            <h2>Plano 3D SIMPLES</h2>
+                            <p>Neste pacote, oferecemos um serviço  para transformar seu espaço de acordo com seus gostos e ideias. O processo começa com um planejamento detalhado do ambiente, levando em consideração todos os seus desejos.</p>
                             <br>
                         <p>Esse pacote inclui:</p>
                             <br>
@@ -70,27 +73,114 @@
                         <li>Ilustrações 3D: Imagens renderizadas do ambiente já planejado, proporcionando uma visualização realista do projeto.</li>
                         </ul>
                         <br>
-                        <p>Observações: esse pacote inclui duas alterações após a entrega das ilustrações.</p> 
+                        <p><strong>Observações: esse pacote inclui duas alterações após a entrega das ilustrações.</strong></p> 
                         </div>
                     </div>                    
             </section>
             <section id="plano-plus">
                 <div class="conteudo">
-                    <div id="texto-plano"><p>Neste pacote, oferecemos um serviço  para transformar seu espaço de acordo com seus gostos e ideias. O processo começa com um planejamento detalhado do ambiente, levando em consideração todos os seus desejos.</p>
+                    <div class="texto-plano">
+                        <h2>Plano 3D PLUS</h2>
+                        <p>Se você está em busca de um caminho claro para sua reforma, este pacote é perfeito para você. Elaborado com foco no seu orçamento e nas suas limitações.</p>
                             <br>
                         <p>Esse pacote inclui:</p>
                             <br>
                         <ul>
+                        <li>Atendimento Personalizado: Uma consulta exclusiva para entender o tipo de reforma desejada e encontrar a melhor solução para o seu projeto.</li><br>
                         <li>Moodboard: Um painel de colagens e inspirações para compreender melhor os gostos do cliente, baseado na conversa inicial.</li>
                         <li>Ilustrações 3D: Imagens renderizadas do ambiente já planejado, proporcionando uma visualização realista do projeto.</li>
+                        <br>
+                        <li>Folha Descritiva: Uma lista detalhada dos materiais e objetos utilizados no projeto 3D, incluindo preços e lojas onde podem ser adquiridos.</li>
                         </ul>
                         <br>
-                        <p>Observações: esse pacote inclui duas alterações após a entrega das ilustrações.</p> 
+                        <p><strong>Observações: esse pacote inclui duas alterações após a entrega das ilustrações.</strong></p> 
                         </div>
                         <div id="imagem2"><img src="imagens/Sala-de-jantar/cozinha-02.png" alt="imagem-2"></div>
-                        
                 </div>
             </section>
+            <section id="plano-comercial">
+                <div class="conteudo">
+                    <div id="imagem3"><img src="imagens/Cozinhas/Cozinha 01-03.png" alt="imagem-3"></div>
+                    <div class="texto-plano">
+                        <h2>Plano COMERCIAL</h2>
+                        <p>Este pacote é direcionado para ambientes comerciais. Se você busca um atendimento específico para espaços que precisam atrair a atenção do público-alvo, refletir a história do local, o estilo e os tipos de serviços oferecidos, este pacote é ideal para você.</p><br>
+                        <p>Esse pacote inclui:</p><br>
+                        <ul>
+                            <li>Atendimento Personalizado: Uma consulta dedicada para entender o público-alvo, estilo e necessidades do seu local de comércio. Esse projeto requer uma visão mais elaborada para facilitar o atendimento ao público.</li>
+                            <li>Moodboard: Um painel de colagens e inspirações para compreender melhor os gostos do cliente, baseado na conversa inicial.</li>
+                            <li>Ilustrações 3D: Imagens renderizadas do ambiente já planejado, proporcionando uma visualização realista do projeto.</li>
+                            <li>Planta Baixa: Inclusão da planta baixa do local para facilitar a execução por terceiros.</li><br>
+                            <p><strong>Observações: esse pacote inclui duas alterações após a entrega das ilustrações.</strong></p>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="formulario">
+                <h1>Venha fazer o seu projeto conosco</h1>
+                <form action="cadastro.php" method="post">
+
+                    <p>
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome" required>
+                    </p>
+
+                    <p>
+                        <label for="iidade">Idade:</label>
+                        <input type="number" name="idade" id="iidade" required>
+                    </p>
+
+                    <p>
+                        <label for="iplano">Planos:</label>
+                        <select name="estado" id="iest">
+                        <option value="" selected >---Escolha---</option>
+                            <option value="Simples">Plano Simples</option>
+                            <option value="Plus">Plano Plus</option>
+                            <option value="Comercial">Plano Comercial</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="iemail">Seu e-email:</label>
+                        <input type="email" name="email" id="iemail">
+                    </p>
+                    <p>
+                        <label for="itel">Seu contato:</label>
+                        <input type="tel" name="tel" id="itel" placeholder="(xx) xxxxx-xxxx">
+                    </p>
+                    <p>
+                        <label for="imsg">Mensagem:</label>
+                        <textarea name="msg" id="imsg" cols="30" rows="5" placeholder="Deixe uma mensagem"></textarea>
+                    </p>
+                </form>
+            </section>
+            <footer>
+                <h3>Tulip <img src="imagens/logo-branca.png" alt="imagem-logo"><br>Home</h3>
+                <p>Design de interiores</p>
+                <a href="https://www.instagram.com/tulip_home.interiores/" target="_blank"><img class="iconesinsta" src="imagens/instagram-icon.png" alt="icon-instagram"></a>
+
+                <a href="https://www.facebook.com/profile.php?id=61576844583440" target="_blank"><img class="iconesface" src="imagens/facebook-icon.png" alt="icon-facebook"></a>
+
+                <a href="https://wa.me/351938969036?text=Olá%2C%20quero%20falar%20falar%20com%20você" target="_blank"><img class="iconeswhats" src="imagens/whatsapp-icon.png" alt="icon-whatsapp"></a>
+
+                <hr>
+
+                <h4>Contatos</h4>
+
+                <p><img src="" alt=""> <span class="material-symbols-outlined"> call</span> Chamada  para a rede fixa nacional: <br>+351 938 969 036</p>
+
+                <p id="email"><span class="material-symbols-outlined">mail</span> tuliphomeinteriores@outlook.com</p>
+
+                <div id="imagens">
+                    <a href="https://www.instagram.com/p/DI6Gm2Htyi7/" target="_blank"><img src="imagens/livro-post.png" alt="post-instagram"></a>
+                    <a href="https://www.instagram.com/p/DI6JD9atpqf/" target="_blank"><img src="imagens/banheiro-post.png" alt="post-instagram"></a>
+                    <a href="https://www.instagram.com/p/DI1SzQqt-XN/" target="_blank"><img src="imagens/mondborad-post.png" alt="post-instagram"></a>
+                    <a href="https://www.instagram.com/p/DI1SJDpN3JS/" target="_blank"><img src="imagens/tulip-post.jpg" alt="post-instagram"></a>
+                </div>
+
+                <hr id="quebra-footer">
+
+                <p id="direitos">Tulip Home Interiores</p>
+            </footer>
+            
         </main>
 </body>
 </html>

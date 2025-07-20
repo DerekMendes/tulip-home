@@ -152,7 +152,7 @@ section#carrosel h1 {
     
     background-color: #E9E6DD;
     margin-top: 50px;
-    width: 99vw;
+    width: 100vw;
     padding: 15px;
 }
 
@@ -164,12 +164,13 @@ section#carrosel h1 {
 
 
 #plano-simples img {
+    margin-top: 10px;
     max-width: 50vw;
     height: 200px;
  
 }
 
-#texto-plano {
+.texto-plano {
     color: rgb(22, 22, 22);
     text-indent: 1em;
     flex: 1;
@@ -177,14 +178,19 @@ section#carrosel h1 {
     text-align: justify;
 } 
 
-#texto-plano ul {
+.texto-plano h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.texto-plano ul {
     font-size:  0.8em;
 }
 
 #plano-plus {
     
     background-color: white;
-    margin-top: 50px;
+    margin-top: 100px;
     width: 100vw;
     padding: 10px;
 }
@@ -193,10 +199,10 @@ section#carrosel h1 {
 #plano-plus img {
 
     max-width: 50vw;
-    height: 200px;
+    height: 300px;
 }
 
-#plano-plus #texto-plano {
+#plano-plus .texto-plano {
     color: rgb(22, 22, 22);
     text-indent: 1em;
     flex: 1;
@@ -204,3 +210,109 @@ section#carrosel h1 {
     text-align: justify;
     margin-left: 8px;
 } 
+
+#plano-comercial {
+    
+    background-color: #E9E6DD;
+    margin-top: 100px;
+    width: 100vw;
+    padding: 10px;
+}
+
+#plano-comercial img {
+
+    max-width: 50vw;
+    height: 300px;
+}
+
+#formulario {
+    padding: 10px ;
+    margin-top: 80px;
+    background-color: rgb(49, 49, 49);
+    width: 100vw;
+
+}
+
+#formulario h1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+#formulario p {
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    width: 100vw;
+    background-color: #443A35;
+    margin-top: 130px;
+}
+
+footer h3 {
+    color: white;
+    padding: 30px 30px 10px;
+    font-size: 2.9em;
+}
+
+footer p {
+    color: #BCB8B6;
+    padding-left: 30px;
+}
+
+footer h3 > img {
+    position: absolute;
+    width: 17vw;
+}
+
+footer .iconesinsta {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 40px;
+}
+
+footer .iconesface {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40px;
+}
+
+footer .iconeswhats {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40px;
+}
+
+footer h4 {
+    padding: 25px;
+    color: white;
+    font-size: 1.5em;
+}
+
+footer p#email {
+    margin-top: 15px;
+}
+
+footer #imagens {
+    width: 100vw;
+
+}
+
+footer #imagens img {
+    position: relative;
+    top: 30px;
+    left: 10px;
+    width: 22%;
+    height: 130px;
+}
+
+hr#quebra-footer {
+    margin-top: 80px;
+}
+
+p#direitos {
+    padding: 30px 0 10px 10px;
+    font-weight: 900;
+}
