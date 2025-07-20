@@ -310,14 +310,56 @@ section#carrosel h1 {
     color: white;
 }
 
-#formulario p {
+#formulario input[type="text"], input[type="email"], input[type="tel"] {
     color: white;
-    padding: 10px;
+    margin-top: 10px;
+    width: 90vw;
+    padding: 5px;
+    background-color: #222121;
+    border: 1px solid grey;
+    border-radius: 3px;
+    outline: none;
+
 }
 
-input#enviar {
-    padding: 30px;
-    background-color: black;
+#formulario ::placeholder {
+    color: white;
+}
+
+#formulario select {
+    color: white;
+    margin-top: 10px;
+    width: 90vw;
+    padding: 5px;
+    background-color: #222121;
+    border: 1px solid grey;
+    border-radius: 3px;
+    outline: none;
+}
+
+#formulario textarea {
+    color: white;
+    margin-top: 10px;
+    width: 90vw;
+    padding: 5px;
+    background-color: #222121;
+    border: 1px solid grey;
+    border-radius: 3px;
+    outline: none;
+}
+
+input[type=submit] {
+    position: relative;
+    margin-top: 5px;
+    width: 80vw;
+    left: 50%;
+    padding: 7px 20px;
+    border-radius: 7px;
+    font-size: 1.2em;
+    background-color: #E3DBCC;
+    cursor: pointer;
+
+    transform: translate(-50%, 0);
 
 }
 

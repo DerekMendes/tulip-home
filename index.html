@@ -118,18 +118,16 @@
                 </div>
             </section>
             <section id="formulario">
-                <h1>Venha fazer o seu projeto conosco</h1>
+                <h1>Peça seu Orçamento</h1>
                 <form action="cadastro.php" method="post">
 
                     <p>
-                        <label for="inome">Nome:</label>
-                        <input type="text" name="nome" id="inome" required>
+                        <input type="text" name="nome" id="inome" required placeholder="Seu nome">
                     </p>
 
                     <p>
-                        <label for="iplano">Planos:</label>
                         <select name="estado" id="iest">
-                        <option value="" selected >---Escolha---</option>
+                        <option value="" selected >Planos</option>
                             <option value="Simples">Plano Simples</option>
                             <option value="Plus">Plano Plus</option>
                             <option value="Comercial">Plano Comercial</option>
@@ -137,19 +135,16 @@
                         </select>
                     </p>
                     <p>
-                        <label for="iemail">Seu e-email:</label>
-                        <input type="email" name="email" id="iemail">
+                        <input type="email" name="email" id="iemail" required placeholder="Seu E-mail">
                     </p>
                     <p>
-                        <label for="itel">Seu contato:</label>
-                        <input type="tel" name="tel" id="itel" placeholder="(xx) xxxxx-xxxx">
+                        <inpu type="tel" name="tel" id="itel" placeholder="(xx) xxxxx-xxxx">
                     </p>
                     <p>
-                        <label for="imsg">Mensagem:</label>
                         <textarea name="msg" id="imsg" cols="30" rows="5" placeholder="Deixe uma mensagem"></textarea>
                     </p>
 
-                    <input id="botao-enviar" type="submit" value="Enviar">
+                    <input  id="botao-enviar" type="submit" value="Enviar">
 
                 </form>
             </section>
