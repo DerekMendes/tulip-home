@@ -134,7 +134,7 @@ section#carrosel h1 {
     
     font-family: "Bodoni Moda", serif;
     position: relative;
-    margin-top: 310px;
+    margin-top: 325px;
     margin-left: 15px;
     font-weight: normal;
     font-size: 1.4em;
@@ -171,6 +171,7 @@ section#carrosel h1 {
     }
 
 #sobre {
+    margin-top: 70px;
     background-color: #E9E6DD;
     padding: 20px;
     width: 100vw;
@@ -194,7 +195,7 @@ section#carrosel h1 {
 }
 
 #planos {
-    margin-top: 50px;
+    margin-top: 70px;
     background-color: #CFC9BB;
     color: white;
 }
@@ -219,7 +220,7 @@ section#carrosel h1 {
 #plano-simples {
     
     background-color: #E3DBCC;
-    margin-top: 50px;
+    margin-top: 70px;
     width: 100vw;
     padding: 15px;
 }
@@ -260,7 +261,7 @@ section#carrosel h1 {
 #plano-plus {
     
     background-color: #f3f0E9;
-    margin-top: 100px;
+    margin-top: 70px;
     width: 100vw;
     padding: 10px;
 }
@@ -284,7 +285,7 @@ section#carrosel h1 {
 #plano-comercial {
     
     background-color: #E3DBCC;
-    margin-top: 100px;
+    margin-top: 70px;
     width: 100vw;
     padding: 10px;
 }
@@ -297,7 +298,7 @@ section#carrosel h1 {
 
 #formulario {
     padding: 10px ;
-    margin-top: 80px;
+    margin-top: 70px;
     background-color: #222121;
     width: 100vw;
 
