@@ -6,19 +6,85 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: "Poiret One", sans-serif;
+    font-family: "Poiret One", sans-serif;
 
 }
 
 body {
     width: 100vw;
 }
+
 header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
     z-index: 2;
     width: 100vw;
 
     background-color: rgba(0, 0, 0, 0.219);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle {
+    flex: 1;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: right;
+    color: white;
+    padding-right: 8px;
+}
+
+.logo {
+    flex: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.219);
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #e9e6dd8c;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+#burguer {
+    display: flex;
+    color: white;
+    text-align: right;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 3;
 }
 
 header h1 {
@@ -27,18 +93,6 @@ header h1 {
     font-size: 1.4em;
     color: white;
 }
-
-header nav ul {
-    list-style: none;
-    display: none;
-
-}
-
-header nav a {
-    text-decoration: none;
-    color: black;
-}
-
 
 #banner {
     top: 0;
@@ -67,7 +121,7 @@ header nav a {
 
 section#carrosel h1 {
     position: relative;
-    margin-top: 290px;
+    margin-top: 310px;
     margin-left: 15px;
     font-weight: 500;
     font-size: 2em;

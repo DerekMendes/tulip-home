@@ -11,16 +11,21 @@
 </head>
 <body>
         <header>
-            <h1> Tulip Home</h1>
-                <nav>
-                <ul>
-                    <li><a href="Home">Home</a></li>
-                    <li><a href="Sobre">Sobre</a></li>
-                    <li><a href="Planos">Meus planos</a></li>
-                    <!-- <li><a href="Portfolio">Portfólio</a></li>  VER DEPOIS-->
-                    <li><a href="Contato">Contato</a></li>
-                </ul>
-            </nav>
+            <div class="header-container">
+                <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+                <div class="logo"><h1> Tulip Home</h1></div>
+                <div class="spacer"></div>
+            </div>
+                    <nav class="dropdown-menu" id="menu">
+                    <ul>
+                        <li><a href="#banner">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#planos">Meus planos</a></li>
+                        <!-- <li><a href="Portfolio">Portfólio</a></li>  VER DEPOIS-->
+                        <li><a href="#formulario">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
             <section>
@@ -53,9 +58,9 @@
                 <menu id="planos">
                     <ul>
                         <li>PLANOS:</a></li>
-                        <li><a href="#">3D SIMPLES</a></li>
-                        <li><a href="#">3D PLUS</a></li>
-                        <li><a href="#">COMERCIAL</a></li>
+                        <li><a href="#plano-simples">3D SIMPLES</a></li>
+                        <li><a href="#plano-plus">3D PLUS</a></li>
+                        <li><a href="#plano-comercial">COMERCIAL</a></li>
                     </ul>
                 </menu>
             </section>
@@ -72,8 +77,6 @@
                         <li>Moodboard: Um painel de colagens e inspirações para compreender melhor os gostos do cliente, baseado na conversa inicial.</li>
                         <li>Ilustrações 3D: Imagens renderizadas do ambiente já planejado, proporcionando uma visualização realista do projeto.</li>
                         </ul>
-                        <br>
-                        <p><strong>Observações: esse pacote inclui duas alterações após a entrega das ilustrações.</strong></p> 
                         </div>
                     </div>                    
             </section>
@@ -92,8 +95,8 @@
                         <br>
                         <li>Folha Descritiva: Uma lista detalhada dos materiais e objetos utilizados no projeto 3D, incluindo preços e lojas onde podem ser adquiridos.</li>
                         </ul>
-                        <br>
-                        <p><strong>Observações: esse pacote inclui duas alterações após a entrega das ilustrações.</strong></p> 
+                        
+                    
                         </div>
                         <div id="imagem2"><img src="imagens/Sala-de-jantar/cozinha-02.png" alt="imagem-2"></div>
                 </div>
@@ -110,7 +113,6 @@
                             <li>Moodboard: Um painel de colagens e inspirações para compreender melhor os gostos do cliente, baseado na conversa inicial.</li>
                             <li>Ilustrações 3D: Imagens renderizadas do ambiente já planejado, proporcionando uma visualização realista do projeto.</li>
                             <li>Planta Baixa: Inclusão da planta baixa do local para facilitar a execução por terceiros.</li><br>
-                            <p><strong>Observações: esse pacote inclui duas alterações após a entrega das ilustrações.</strong></p>
                         </ul>
                     </div>
                 </div>
@@ -152,6 +154,15 @@
                     </p>
                 </form>
             </section>
+            </main>
+            <script>
+        function toggleMenu() {
+               const menu =
+               document.getElementById("menu");
+               menu.classList.toggle("active");
+        }
+    </script>
+
             <footer>
                 <h3>Tulip <img src="imagens/logo-branca.png" alt="imagem-logo"><br>Home</h3>
                 <p>Design de interiores</p>
@@ -180,7 +191,5 @@
 
                 <p id="direitos">Tulip Home Interiores</p>
             </footer>
-            
-        </main>
 </body>
 </html>
