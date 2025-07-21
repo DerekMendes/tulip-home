@@ -10,6 +10,22 @@
         height: 200px;
     }
 
+    #planos  ul {
+        gap: 70px;
+    }
+
+    .texto-plano {
+        font-size: 0.7em;
+    }
+
+    #tulipa img {
+        margin: 0 -8px;
+    }
+    
+    footer #imagens img {
+        width: 23%;
+        height: 160px;
+    }
 }
 
 
