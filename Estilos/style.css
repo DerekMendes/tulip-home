@@ -58,32 +58,33 @@ header {
     
 }
 
-.dropdown-menu {
+#menu {
     display: none;
     background-color: rgba(0, 0, 0, 0.219);
     width: 100%;
     text-align: center;
 }
 
-.dropdown-menu ul {
+#menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 
 }
 
-.dropdown-menu li a {
+#menu li a {
     display: block;
     padding: 15px;
     color: white;
     text-decoration: none;
 }
 
-.dropdown-menu li a:hover {
+#menu li a:hover {
     background-color: #e9e6dd8c;
 }
 
-.dropdown-menu.active {
+#menu.active {
+    
     display: block;
 }
 
@@ -195,6 +196,7 @@ section#carrosel h1 {
 }
 
 #planos {
+    display: flex;
     margin-top: 70px;
     background-color: #CFC9BB;
     color: white;
